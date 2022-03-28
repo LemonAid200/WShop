@@ -1,6 +1,9 @@
 <template>
     <div class="allItems">
-        <item />
+        <item 
+            v-for="waifu in waifus" :key="waifu.id"
+            v-bind:waifu="waifu"
+        />
     </div>
 </template>
 
@@ -8,8 +11,16 @@
 import item from '@/components/WShopItem.vue'
 
 export default {
+    props: ['waifus'],
     components:{
         item
     }
 }
 </script>
+
+
+<style>
+    .allItems{
+        display: inline-flex;
+    }
+</style>

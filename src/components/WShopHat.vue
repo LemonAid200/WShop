@@ -7,12 +7,13 @@
 
 <style>
     #hat{
-        position: absolute;
+        position: relative;
         display: inline-flex;
         background-color: rgb(190, 165, 132);
         width: 100vw;
         height: 80px;
         align-items: center;
+        margin-bottom: 15px;
     }
     .title{
         margin-left: 15px;
@@ -25,10 +26,11 @@
         position: absolute;
         right: 15px;
         cursor: pointer;
+        transition: background-color 0.3s;
     }
 
-    .cart_button :hover{
-        background-color: rgb(95, 36, 36);
+    .cart_button:hover{
+        background-color: rgb(65, 241, 42);
 
     }
 </style>
