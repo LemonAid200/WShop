@@ -19,8 +19,3 @@ export default {
 </script>
 
 
-<style>
-    .allItems{
-        display: inline-flex;
-    }
-</style>

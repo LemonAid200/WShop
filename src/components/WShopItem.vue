@@ -1,6 +1,6 @@
 <template>
     <div class="item">
-        <img class="image" :src='waifu.img' alt="">
+        <img class="image" :src='waifu.url' alt="">
         <div class="description">{{waifu.waifuName}}</div>
         <button class="addToCartButton">Add</button>
     </div>
@@ -30,7 +30,20 @@
     }
 
     .description{
+        position: absolute;
         font-size: 20px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        background-color: rgba(112, 110, 106, 0.7);
+        padding-top: 20px;
+        opacity: 0;
+    }
+
+    .description:hover{
+        opacity:1;
     }
     
     .image{
