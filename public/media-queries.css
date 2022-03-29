@@ -1,0 +1,18 @@
+
+/* mobile styles */
+@media only screen and (max-width: 610px) {
+    .allItems{
+        display: flow-root;
+        
+    }
+    
+    
+}
+
+
+/* desktop styles */
+@media screen and (min-width: 611px) {
+    .allItems{
+        display: inline-flex;        
+    }
+}
