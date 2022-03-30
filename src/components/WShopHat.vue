@@ -1,9 +1,24 @@
 <template>
     <header id="hat">
         <h1 class="title">Waifu Shop</h1>
-        <button class="cart_button">Корзина</button>
+        <button class="cart_button">{{'Корзина (' + amoutInCart + ')'}}</button>
     </header>
 </template>
+
+<script>
+import store from '@/vuex/store'
+
+export default {
+  
+  data(){
+    return{
+      amoutInCart: store.state.cart.length
+    }
+  }
+  
+}
+</script>
+
 
 <style>
     #hat{
