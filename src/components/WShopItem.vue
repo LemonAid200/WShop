@@ -2,9 +2,30 @@
     <div class="item">
         <img class="image" :src='waifu.url' alt="">
         <div class="description">{{waifu.waifuName}}</div>
-        <button class="addToCartButton">Add</button>
+        <button class="addToCartButton" v-on:click="doDoDo()">Add</button>
     </div>
 </template>
+
+
+<script>
+import store from "@/vuex/store"
+
+export default({
+   props:{
+       waifu:{
+           type: Object,
+           required: true,
+        }
+    },
+    methods: {
+        doDoDo(){
+            
+            console.log(store.state.cart)
+        }
+    }
+  
+})
+</script>
 
 <style>
     .item{
@@ -56,17 +77,3 @@
 </style>
 
 
-<script>
-
-export default({
-   props:{
-       waifu:{
-           type: Object,
-           required: true,
-           
-       }
-       
-   }
-  
-})
-</script>

@@ -1,9 +1,11 @@
 <template>
-    <div class="allItems">
-        <item 
-            v-for="waifu in waifus" :key="waifu.id"
-            v-bind:waifu="waifu"
-        />
+    <div class="allItemsWrapper">
+        <div class="allItems">
+            <item 
+                v-for="waifu in waifus" :key="waifu.id"
+                v-bind:waifu="waifu"
+            />
+        </div>
     </div>
 </template>
 
@@ -17,5 +19,15 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+    .allItems{
+        position: absolute;
+        left:50%;
+        transform: translate(-50%);
+    }
+
+   
+</style>
 
 
