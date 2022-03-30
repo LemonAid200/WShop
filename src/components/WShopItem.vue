@@ -63,8 +63,7 @@ export default({
        waifu:{
            type: Object,
            required: true,
-           
-       }
+        }
        
    }
   
