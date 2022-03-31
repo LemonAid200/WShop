@@ -40,7 +40,7 @@ export default({
         
     }
     .addToCartButton{
-        background-color: rgb(46, 194, 46);
+        background-color: rgb(101 165 93);
         width: 80px;
         height: 35px;
         border-radius: 20px;
@@ -48,6 +48,10 @@ export default({
         left: 50%;
         bottom: 20px;
         transform: translate(-50%);
+    }
+
+    .addToCartButton:hover{
+        background-color: rgb(106 196 94);
     }
 
     .description{
@@ -61,6 +65,7 @@ export default({
         background-color: rgba(112, 110, 106, 0.7);
         padding-top: 20px;
         opacity: 0;
+        transition: opacity 0.5s;
     }
 
     .description:hover{

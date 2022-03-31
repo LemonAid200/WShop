@@ -34,7 +34,7 @@ export default {
         margin-left: 15px;
     }
     .cart_button{
-        background-color: rgb(46, 194, 46);
+        background-color: rgb(101 165 93 / 63%);
         width: 100px;
         height: 40px;
         border-radius: 20px;
@@ -45,7 +45,7 @@ export default {
     }
 
     .cart_button:hover{
-        background-color: rgb(65, 241, 42);
+        background-color: rgb(106 196 94 / 48%);
 
     }
 </style>

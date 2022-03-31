@@ -1,7 +1,7 @@
 <template>
     <div id="links_wrapper">
             <div id="links">
-                <div class="page_link">1</div>
+                <div class="page_link underline">1</div>
                 <div class="page_link">2</div>
                 <div class="page_link">3</div>
             </div>
@@ -28,5 +28,11 @@
     }
     .page_link{
         margin: 10px 20px;
+        cursor: pointer;
     }
+
+    .underline{
+        text-decoration: underline;
+    }
+
 </style>
