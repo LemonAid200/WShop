@@ -7,11 +7,7 @@ const store = new Vuex.Store({
     state:{
         line: 'Hello World',
         cart: [],
-        mainPage: [
-            
-          ],
-        secondPage: [],
-        thirdPage:[]
+        displayedPage: 1,
     },
     // асинхонные изменения 
     mutations:{

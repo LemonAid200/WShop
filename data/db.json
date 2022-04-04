@@ -1,9 +1,89 @@
 {
-    "waifus":[
-        { "id": 1, "waifuName": "Chika Fujiwara", "url": "https://pm1.narvii.com/7201/435d9131cf4ebca9ddd55b7b43edd0d232c16a1cr1-697-919v2_hq.jpg"},
-        { "id": 2, "waifuName": "Aska",  "url": "http://pm1.narvii.com/7182/35026d057a8b37d8235755648325e33ad755e70fr1-900-1136v2_uhq.jpg"},
-        { "id": 3, "waifuName": "Emilia",  "url": "https://pm1.narvii.com/6526/ccb7c5302bff111fa59c7a61526cbc6c49005a6d_hq.jpg"},
-        { "id": 4, "waifuName": "Rem", "url": "http://pm1.narvii.com/7041/603543fe1887e6974f0646836cfd5bcd6718311br1-493-622v2_uhq.jpg"},
-        { "id": 5, "waifuName": "Mikasa", "url": "https://s1.narvii.com/image/qha72m5gg6ffot6odh4m5liydvoudj5h_hq.jpg"}
-    ]
+  "waifus": [
+    {
+      "id": 1,
+      "waifuName": "Chika Fujiwara",
+      "url": "https://pm1.narvii.com/7201/435d9131cf4ebca9ddd55b7b43edd0d232c16a1cr1-697-919v2_hq.jpg"
+    },
+    {
+      "id": 2,
+      "waifuName": "Aska",
+      "url": "http://pm1.narvii.com/7182/35026d057a8b37d8235755648325e33ad755e70fr1-900-1136v2_uhq.jpg"
+    },
+    {
+      "id": 3,
+      "waifuName": "Emilia",
+      "url": "https://pm1.narvii.com/6526/ccb7c5302bff111fa59c7a61526cbc6c49005a6d_hq.jpg"
+    },
+    {
+      "id": 4,
+      "waifuName": "Rem",
+      "url": "http://pm1.narvii.com/7041/603543fe1887e6974f0646836cfd5bcd6718311br1-493-622v2_uhq.jpg"
+    },
+    {
+      "id": 5,
+      "waifuName": "Mikasa",
+      "url": "https://s1.narvii.com/image/qha72m5gg6ffot6odh4m5liydvoudj5h_hq.jpg"
+    },
+    {
+      "waifuName": "Random Waifu",
+      "url": "https://cdn.waifu.im/b31ed3abb96216fb.jpg",
+      "id": 6
+    },
+    {
+      "waifuName": "Random Waifu",
+      "url": "https://cdn.waifu.im/66215725bd0ae6f0.gif",
+      "id": 7
+    },
+    {
+      "waifuName": "Random Waifu",
+      "url": "https://cdn.waifu.im/f1d2b32a140fe78f.png",
+      "id": 8
+    },
+    {
+      "waifuName": "Random Waifu",
+      "url": "https://cdn.waifu.im/4ca7a4744604e859.jpg",
+      "id": 9
+    },
+    {
+      "waifuName": "Random Waifu",
+      "url": "https://cdn.waifu.im/6544637f543bf3c0.jpeg",
+      "id": 10
+    },
+    {
+      "waifuName": "Random Waifu",
+      "url": "https://cdn.waifu.im/ecc7e8e8043c5df4.jpeg",
+      "id": 11
+    },
+    {
+      "waifuName": "Random Waifu",
+      "url": "https://cdn.waifu.im/1071a527d8c2dcf6.jpeg",
+      "id": 12
+    },
+    {
+      "waifuName": "Random Waifu",
+      "url": "https://cdn.waifu.im/f38787ae263221ae.jpg",
+      "id": 13
+    },
+    {
+      "waifuName": "Random Waifu",
+      "url": "https://cdn.waifu.im/5b585940a3f23e53.jpeg",
+      "id": 14
+    },
+    {
+      "waifuName": "Random Waifu",
+      "url": "https://cdn.waifu.im/51a2cb990e3f9ab2.png",
+      "id": 15
+    },
+    {
+      "waifuName": "Random Waifu",
+      "url": "https://cdn.waifu.im/c9ae812b183dcd2d.jpeg",
+      "id": 16
+    },
+    {
+      "waifuName": "Random Waifu",
+      "url": "https://cdn.waifu.im/f4dd58b54e202205.jpg",
+      "id": 17
+    }
+  ]
 }
