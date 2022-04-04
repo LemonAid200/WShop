@@ -2,7 +2,7 @@
     <div class="item">
         <img class="image" :src='waifu.url' alt="">
         <div class="description">{{waifu.waifuName}}</div>
-        <button class="addToCartButton" v-on:click="doDoDo()">Add</button>
+        <button class="addToCartButton" v-on:click="doDoDo(waifu)">Add</button>
     </div>
 </template>
 
@@ -18,8 +18,8 @@ export default({
         }
     },
     methods: {
-        doDoDo(){
-            
+        doDoDo(waifu){
+            store.state.cart.push(waifu)
             console.log(store.state.cart)
         }
     }

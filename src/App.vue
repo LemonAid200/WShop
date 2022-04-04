@@ -15,7 +15,7 @@
 import WShopHat from '@/components/WShopHat'
 import WShopItems from '@/components/WShopItems.vue'
 import WShopPages from '@/components/WShopCatalogePagesLinks.vue'
-import store from '@/vuex/store'
+// import store from '@/vuex/store'
 
 export default {
   name: 'App',
@@ -27,9 +27,16 @@ export default {
   data(){
     return{
 
-      products: store.state.mainPage
+      products: []
 
     }
+  },
+  mounted(){
+    fetch('http://localhost:3000/waifus')
+    .then(response => response.json())
+    .then(data => this.products = data)
+    .catch(err => console.log(err.message))
+
   }
   
 }
