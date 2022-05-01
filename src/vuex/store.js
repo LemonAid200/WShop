@@ -7,11 +7,7 @@ const store = new Vuex.Store({
     state:{
         line: 'Hello World',
         cart: [],
-        mainPage: [
-            
-          ],
-        secondPage: [],
-        thirdPage:[]
+        displayedPage: 2,
     },
     // асинхонные изменения 
     mutations:{
@@ -21,9 +17,9 @@ const store = new Vuex.Store({
         addToCart(item){
             this.cart.push(item)
         },
-        addToMainPage(item){
-            this.mainPage.push(item)
-        },
+        changePageTo(n){
+            this.displayedPage = n
+        }
         
 
     },

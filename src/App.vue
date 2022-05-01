@@ -3,7 +3,7 @@
 
     <WShopHat />
     <WShopItems 
-      v-bind:waifus="products"
+      v-bind:waifus="displayedProducts"
     />
     <WShopPages/>
     
@@ -15,7 +15,11 @@
 import WShopHat from '@/components/WShopHat'
 import WShopItems from '@/components/WShopItems.vue'
 import WShopPages from '@/components/WShopCatalogePagesLinks.vue'
-// import store from '@/vuex/store'
+// import axios from 'axios'
+import store from '@/vuex/store'
+const dbURL = 'http://localhost:3000/waifus'
+// const waifuURL = 'https://api.waifu.im/random/'
+
 
 export default {
   name: 'App',
@@ -27,17 +31,46 @@ export default {
   data(){
     return{
 
-      products: []
+      AllProducts: [],
+      displayedProducts: []
+      
 
     }
   },
   mounted(){
-    fetch('http://localhost:3000/waifus')
+    fetch(dbURL)
     .then(response => response.json())
-    .then(data => this.products = data)
+    .then(data => {
+      this.AllProducts = data
+      this.renderPage()
+    })
     .catch(err => console.log(err.message))
 
+  },
+  methods: {
+    renderPage(){
+      let pageNumber = store.state.displayedPage
+      this.displayedProducts = []
+      let arrayStart =(pageNumber-1)*5
+      let arrayEnd = arrayStart+5
+      if (arrayStart > this.AllProducts.length) {return}
+      if (arrayEnd > this.AllProducts.length) {arrayEnd = this.AllProducts.length}
+      for(let i=arrayStart;i<arrayEnd;i++){
+        this.displayedProducts.push(this.AllProducts[i])
+      }
+    }
   }
+
+  // this method will add n waifus
+  // async created() {
+  //   const n = 2
+  //   for (let i = 0; i < n; i++){
+  //     fetch(waifuURL)
+  //     .then(response => response.json())
+  //     .then(data => axios.post(dbURL, {waifuName: 'Random Waifu', url: data.images[0].url}))
+  //   }
+
+  // }
   
 }
 </script>
